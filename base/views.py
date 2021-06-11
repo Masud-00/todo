@@ -18,7 +18,7 @@ from .forms import Registetion,Taskform,LoginForm
 
 class Tasklogin(LoginView):
     form_class=LoginForm
-    template_name='base/login.html'
+    template_name='base/index.html'
     fields='__all__'
     redirect_authenticated_user=True
     def get_success_url(self):
