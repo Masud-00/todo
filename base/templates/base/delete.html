@@ -1,0 +1,16 @@
+{% extends 'base/main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<form action="" method="post">
+{% csrf_token %}
+<div class="text-center p-5">
+    <h4 class="p-4">Are you sure to delete <b>{{task.title}}</b> ?</h4>
+    <input class="btn btn-danger "  type="submit" value="delete">
+    </form></div>
+    <a class="btn btn-secondary "  href="{% url 'home' %}">Go back</a>
+{% endblock content %}
+
+

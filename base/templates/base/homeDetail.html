@@ -1,0 +1,8 @@
+{% extends 'base/main.html' %} {% load static %} {% block content %}
+<div class="text-center">
+  <h3>{{task.title}}</h3>
+  <h5>{{task.descriptions }}</h5>
+  <small>{{task.created}}</small>
+</div>
+<a class="btn btn-secondary" href="{% url 'home' %}">Go back</a>
+{% endblock content %}

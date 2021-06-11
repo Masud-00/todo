@@ -1,0 +1,22 @@
+{% extends 'base/main.html' %} {% load static %} {% block content %}
+
+<h1 class="p-5 text-center">Login</h1>
+<div class="form-group p-3">
+  {% if form.non_field_errors %} {% for error in form.non_field_errors %}
+  <span class="error">{{error}}</span>
+  {% endfor %} {% endif %} {% for f in form %}
+  <form action="" method="post" novalidate>
+    {% csrf_token %} {{f.label}}:{{f}}
+    <span class="error">{{f.errors|striptags}}</span><br />
+    {% endfor %}
+
+    <input class="btn btn-success" type="submit" value="Login" />
+  </form>
+</div>
+
+<p class="p-5 text-center">
+  Don't have an account?
+  <a class="log" href="{% url 'register' %}">Register</a>
+</p>
+
+{% endblock content %}

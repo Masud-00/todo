@@ -1,0 +1,72 @@
+/* home page */
+
+.container {
+    background-color: #FAFAFA;
+  padding: 30px;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.todo {
+    background-color: rgb(11, 105, 168);
+    color: white;
+ padding-top: 30px;
+ padding-bottom: 30px;
+  margin: auto;
+ text-align: center;
+ 
+}
+.table {
+  width: 100%;
+  margin: auto;
+}
+.nav1 {
+    background-color: #FAFAFA;
+    color:black;
+    height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+padding-top: 30px;
+padding-bottom: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 30px;
+}
+.task-complete{
+    height: 20px;
+    width: 20px;
+    background-color: chartreuse;
+    border-radius: 50%;
+}
+.task-incomplete{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(175, 142, 142);
+    border-radius: 50%;
+}
+.task-title{
+    text-decoration: none;
+    color: #4b5156;
+}
+
+
+/* register */
+
+.log{
+    text-decoration: none;
+    color: blue;
+}
+.error{
+ color: red;
+}

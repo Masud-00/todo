@@ -1,0 +1,18 @@
+{% extends 'base/main.html' %} {% load static %} {% block content %}
+
+<h2 class="p-3 text-center">Register</h2>
+<div class="form-group p-3">
+  {% for f in form %}
+  <form action="" method="post" novalidate>
+    {% csrf_token %} {{form.non_field.errors}} {{f.label}}:{{f}}
+    <span class="error">{{f.errors|striptags}}</span><br />
+
+    {% endfor %}
+    <input class="btn btn-success" type="submit" value="Register" />
+  </form>
+</div>
+
+<p class="p-5 text-center">
+  Already have an account | <a class="log" href="{% url 'login' %}">Login</a>
+</p>
+{% endblock content %}
