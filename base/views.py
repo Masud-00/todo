@@ -18,7 +18,7 @@ from .forms import Registetion,Taskform,LoginForm
 
 class Tasklogin(LoginView):
     form_class=LoginForm
-    template_name='base/index.html'
+    template_name='base/login.html'
     fields='__all__'
     redirect_authenticated_user=True
     def get_success_url(self):
@@ -47,7 +47,7 @@ class Taskregister(FormView):
 
 class TaskList(LoginRequiredMixin,ListView):
     model=Task
-    template_name='base/home.html'
+    template_name='base/index.html'
     context_object_name='tasks'
     ordering=['complete']
 
