@@ -47,7 +47,7 @@ class Taskregister(FormView):
 
 class TaskList(LoginRequiredMixin,ListView):
     model=Task
-    template_name='base/index.html'
+    template_name='base/home.html'
     context_object_name='tasks'
     ordering=['complete']
 
