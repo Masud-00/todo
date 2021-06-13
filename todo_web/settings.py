@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG")
 
-ALLOWED_HOSTS = [https://masud-00.github.io/]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
